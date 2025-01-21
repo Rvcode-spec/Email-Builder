@@ -1,0 +1,598 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;
+    text-transform: capitalize;
+    font-style: italic;
+
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 57px;
+    background-color:#fff;
+}
+
+.logo{
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 25%;
+    height: 57px; /* Match the header height */
+    text-align: center;
+    /* background-color: antiquewhite;   only check  */
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 3px rgb(103, 95, 182), 
+    0 0 1em rgb(209, 237, 67),
+    0 0 0.7em rgb(228, 221, 15);
+}
+
+.items {
+    display: flex; /* Flexbox for the container */
+    justify-content: center; /* Center align the ul horizontally */
+    align-items: center; /* Center align the ul vertically (optional if needed) */
+    width: 50%; /* Full width of the container */
+    /* background-color: red;  */
+
+    
+}
+
+.items ul {
+    display: flex; /* Flexbox for the ul */
+    justify-content: space-between; /* Space between the list items */
+    width: 50%; /* Adjust width as needed for spacing */
+}
+
+.items ul li {
+    display: flex; /* Flexbox for individual list items */
+    align-items: center; /* Center align text vertically */
+   
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+   
+}
+
+.login button{
+
+    width: 80px;
+    height: 37px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background: linear-gradient(#7fc9c6,#196f6a);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.body{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(155, 33, 231);;
+    
+}
+
+.context {
+    display: flex; 
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center the text inside the elements */
+    height: 80vh; /* Full viewport height */
+    background-color: rgb(155, 33, 231);;
+}
+
+.context h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 20px; 
+    color: #fff; 
+    line-height: 1.3; /* Increase line height for better readability */
+}
+
+.context p {
+    font-size: 1.2rem; /* Slightly smaller font size for the paragraph */
+    color: #fff; /* Lighter color for the paragraph */
+    max-width: 800px; /* Limit the width for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+ #btn{
+    width: 20%;
+    height: 57px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #fdbb2d, #a3bd6b);
+    border: none;
+    border-radius: 4px;
+
+
+}
+
+.v-box{
+
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    background-color: #196f6a;
+    z-index: 999;
+}
+
+.templates-main-box{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #dfd4d6;
+}
+
+.blank-box{
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: 10px;
+    width: 20%;
+    line-height: 1px;
+    height: 50%;
+    background-color: #fff;
+}
+.blank-box h2 {
+    font-size: 1.5rem; /* Default heading size */
+    margin: 10px 0; /* Add spacing for readability */
+    text-align: center; /* Center-align text */
+}
+
+.blank-box p {
+    font-size: 1rem; /* Default paragraph size */
+    line-height: 1.5; /* Better readability */
+    margin: 5px 0; /* Spacing between paragraphs */
+    text-align: center; /* Center-align text */
+}
+
+
+.template-module {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    position: relative;
+    align-items: center; /* Center-align elements horizontally */
+    width: 15%;
+    height: 80%;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 6px;
+    transition: 0.2s all ease;
+    box-shadow: 0 4px 6px rgba(233, 10, 10, 0.5); /* Fixed box-shadow syntax */
+    box-sizing: border-box; /* Ensures padding and border are included in dimensions */
+    background-color: #333;
+    background-image: url('./Images/Shopping\ Template.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+.card-module {
+    display: none;
+    flex-direction: column; /* Align children vertically */
+    justify-content: space-between; /* Distribute spacing evenly */
+    align-items: center; /* Center-align elements horizontally */
+    width: 90%; /* Full width of the parent container */
+    height: 100%;   
+    padding: 10px; /* Add padding for better spacing */
+    margin-top: -10px;
+    border: 1px solid #ccc; 
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: #f6f0f1; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Proper shadow with RGBA */
+    position: relative; /* Changed to relative for proper positioning within parent */
+    z-index: 999;
+}
+
+
+.card-module p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    align-self: flex-start; /* Align the <p> to the top-left */
+}
+
+.card-module h3 {
+    margin: 20px 0; /* Add gap between <p> and <h3> */
+    font-size: 18px;
+    text-align: center; /* Center text alignment */
+    color: #333;
+}
+
+.card-module button {
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Button color */
+    transition: background-color 0.3s ease;
+}
+
+.card-module button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+.template-module:hover .card-module {
+    display: block; /* Make it visible on hover */
+}
+
+
+.Editer-main-box{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    background:linear-gradient(#e4e4fb,#f6f0f1)
+}
+
+.Editer-Commponet{
+    width: 20%;
+    height: 100vh;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background: linear-gradient(#dedeee,#bccdcb);
+}
+.Editer-Commponet p{
+
+    font-size: 0.8rem;
+}
+
+.Title,.image,.btn,.paragraph,.table,.menu,.gifs,.icon{
+
+    width: 25%;
+    height: 15%;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.Title:hover,
+.image:hover,
+.btn:hover,
+.paragraph:hover,
+.table:hover,
+.menu:hover,
+.gifs:hover,
+.icon:hover {
+    box-shadow: 0 8px 16px rgba(219, 16, 16, 0.2); /* Increased shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the box */
+}
+
+.Editer-box{
+
+    width: 80%;
+    height: auto;
+    display: flex;
+    border-radius: 6px;
+    background-color: #0056b3;
+}
+
+@media(max-width:1080px){
+
+    .header{
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .items ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .context h1 {
+        font-size: 2.5rem;
+    }
+
+    .context p {
+        font-size: .8rem;
+    }
+
+    #btn{
+        
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    .context{
+
+        width: 100%;
+    }
+
+    .template-edit-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .templates-main-box{
+
+        width: 100%;
+
+    }
+
+    .blank-box{
+
+        width: 20%;
+        height: 50%;
+    }
+
+    .blank-box h2 {
+        font-size: 1.2rem; /* Slightly smaller heading */
+    }
+
+    .blank-box p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
+
+    .v-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .template-module {
+        width: 15%;
+       
+    }
+
+    .Editer-Commponet {
+        width: 30%;
+    }
+
+    .Editer-Commponet p{
+
+        font-size: 0.8rem;
+    }
+
+    .Title, .image, .btn, .paragraph, .table, .menu, .gifs, .icon {
+        width: 20%;
+        height: auto;
+    }
+
+    
+    .card-module{
+
+        width: 100%;
+    }
+
+    .card-module p {
+        font-size: 12px; /* Reduce text size */
+    }
+
+    .card-module h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .card-module button {
+        width: 120px; /* Smaller button width */
+        font-size: 14px; /* Reduce font size */
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+
+@media (max-width: 768px) {
+
+    .header{
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .items ul {
+        
+            flex-direction: column-reverse; /* Reverse the order */
+            justify-content: space-between; /* Distribute items evenly */
+            align-items: center; /* Center-align items */
+        }
+    
+
+        #btn{
+        
+            font-size: 1rem;
+            width: 30%;
+        }
+    
+    .context{
+
+        width: 100%;
+    }
+
+    .v-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .templates-main-box{
+        width: 100%;
+    }
+
+    .template-edit-img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .template-module {
+        width: 20%;
+        margin-left: 05%; /* Add more spacing for smaller screens */
+        /* margin-top: 0%; */
+    }
+
+    .blank-box{
+
+        width: 40%;
+        height: 50%;
+    }
+
+    .blank-box h2 {
+        font-size: 1.2rem; /* Slightly smaller heading */
+    }
+
+    .blank-box p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
+
+
+    .Editer-Commponet {
+        width: 30%;
+    }
+
+    .Editer-Commponet p{
+
+        font-size: 0.5rem;
+    }
+
+    .Title, .image, .btn, .paragraph, .table, .menu, .gifs, .icon {
+        width: 20%;
+        height: auto;
+    }
+
+    
+    .card-module{
+
+        width: 90%;
+    }
+
+    .card-module p {
+        font-size: 12px; /* Reduce text size */
+    }
+
+    .card-module h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .card-module button {
+        width: 100px; /* Smaller button width */
+        font-size: 14px; /* Reduce font size */
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+@media (max-width: 480px) {
+
+    .header{
+        width: 100%;
+    }
+
+    .logo {
+        font-size: .8rem;
+    }
+    .context{
+
+        width: 100%;
+    }
+
+    .context h1 {
+        font-size: 1rem;
+    }
+
+    .context p {
+        font-size: 0.7rem;
+    }
+
+    #btn{
+        
+        font-size: .8rem;
+        width: 30%;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .items ul {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full-width */
+        
+    }
+
+    .login {
+        width: 80%;
+    }
+
+    .template-module {
+        width: 25%; /* Full-width modules for very small screens */
+    }
+
+    .templates-main-box{
+        width: 100%;
+    }
+
+
+    .blank-box{
+
+        width: 40%;
+        height: 50%;
+    }
+
+    .blank-box h2 {
+        font-size: .6rem; /* Reduce heading size further */
+    }
+
+    .blank-box p {
+        font-size: 0.4rem; /* Smaller paragraph size */
+    }
+}
+
+    .Editer-Commponet {
+        width: 40%;
+    }
+
+    .Editer-Commponet p{
+
+        font-size: 0.5rem;
+    }
+
+    
+    .card-module p {
+        font-size: 12px; /* Reduce text size */
+    }
+
+    .card-module h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .card-module button {
+        width: 80px; /* Smaller button width */
+        font-size: 14px; /* Reduce font size */
+        justify-content: center;
+        align-items: center;
+    
+    }

@@ -10,7 +10,7 @@ export default function TempBox() {
 
       // Send file to backend
       axios
-        .post("http://localhost:3000/upload", formData, {
+        .post("https://email-builder-app.onrender.com", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

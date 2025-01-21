@@ -253,7 +253,9 @@
     flex-wrap: wrap;
     border: 1px solid black;
     background: linear-gradient(#dedeee,#bccdcb);
+
 }
+
 .Editer-Commponet p{
 
     font-size: 0.8rem;
@@ -261,8 +263,8 @@
 
 .Title,.image,.btn,.paragraph,.table,.menu,.gifs,.icon{
 
-    width: 25%;
-    height: 15%;
+    width: 30%;
+    height: 25%;
     border-radius: 6px;
     margin: 10px;
     padding: 10px 10px;
@@ -367,7 +369,7 @@
     }
 
     .Editer-Commponet {
-        width: 30%;
+        width: 20%;
     }
 
     .Editer-Commponet p{
@@ -572,7 +574,7 @@
 }
 
     .Editer-Commponet {
-        width: 40%;
+        width: 30%;
     }
 
     .Editer-Commponet p{

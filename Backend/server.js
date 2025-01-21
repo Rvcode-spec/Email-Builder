@@ -3,7 +3,7 @@ const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
 const fs = require("fs"); // Include fs module
-require("dotenv").config();
+const dotenv=require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;

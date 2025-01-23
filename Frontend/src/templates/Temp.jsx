@@ -35,11 +35,6 @@ const Temp = () => {
         </div>
     </div>
 
-{/*     
-    <div className='img-temp'>
-        <button></button>
-    </div>
-
     
     <div className='img-temp'>
         <button></button>
@@ -48,7 +43,12 @@ const Temp = () => {
     
     <div className='img-temp'>
         <button></button>
-    </div> */}
+    </div>
+
+    
+    <div className='img-temp'>
+        <button></button>
+    </div>
 
         
       </footer>
